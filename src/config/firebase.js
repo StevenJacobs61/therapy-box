@@ -75,7 +75,6 @@ export async function upload(file, location){
 };
 
 // Get user's tasks
-
 export async function getUserTasks(uid){
   try {
     const userDoc = await getDoc(doc(db, 'Users', uid));
@@ -92,7 +91,6 @@ export async function getUserTasks(uid){
 }
 
 // Update Task
-
 export async function addTaskToUser(uid, taskData){
   const userRef = doc(db, 'Users', uid);
 const docSnap = await getDoc(userRef);
@@ -110,7 +108,6 @@ if (docSnap.exists()) {
 }
 
 // Update task true or false
-
 export async function toggleTaskComplete(uid, taskId){
   const userRef = doc(db, "Users", uid);
   const userDoc = await getDoc(userRef);
@@ -133,7 +130,6 @@ export async function toggleTaskComplete(uid, taskId){
 }
 
 // Delete task
-
 export async function deleteTask(uid, task) {
   const userRef = doc(db, "Users", uid);
   const userDoc = await getDoc(userRef);
@@ -146,7 +142,6 @@ export async function deleteTask(uid, task) {
 
 
 // Get user email
-
 export async function getUserEmail(username){
   try {
     const querySnapshot = await getDocs(collection(db, 'Users'));

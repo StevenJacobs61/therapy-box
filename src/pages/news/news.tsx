@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import useBBCNews, { fetchImageUrl } from '../../hooks/news';
+import useBBCNews, { fetchImageUrl } from '../../hooks/useBBCNews';
 import Styles from '../news/news.module.css'
 
 const News = () => {

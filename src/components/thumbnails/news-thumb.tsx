@@ -1,6 +1,6 @@
 import React from 'react'
 import Styles from './thumbnails.module.css'
-import useBBCNews from '../../hooks/news';
+import useBBCNews from '../../hooks/useBBCNews';
 
 const NewsThumb = () => {
   const news = useBBCNews();

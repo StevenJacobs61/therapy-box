@@ -3,7 +3,7 @@ import Styles from '../layout/layout.module.css'
 import { useLocation } from 'react-router-dom'
 import { auth} from '../../config/firebase'
 import { useNavigate } from "react-router-dom";
-import UseProfilePic from '../../hooks/use-profile-pic';
+import UseProfilePic from '../../hooks/useProfilePicture';
 
 interface LayoutProps {
     children: ReactNode
