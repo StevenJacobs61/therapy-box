@@ -1,0 +1,17 @@
+.section{
+  display: flex;
+  gap: 15vw;
+}
+
+.containerCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18vh;
+}
+.containerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55vw;
+}

@@ -1,0 +1,11 @@
+.section{
+    padding: 10vh 0 0;
+}
+.header{
+    font-size: 8.5rem;
+    color: var(--color-white);
+    font-weight: 500;
+    opacity: 0.8;
+    margin: 2rem 0;
+    height: 23vh;
+}

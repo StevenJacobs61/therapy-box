@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+html{
+  font-size: 62.5%;
+}
+body{
+  /* font-family: Inconsolata, Helvetica, sans-serif; */
+}
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Theme Variables */
+
+#root {
+  --color-white: #ffffff;
+  --color-yellow: #ffe65e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Containers */
+
+.flex--center{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.flex--col{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+/* Grids */
+
+.grid--3x2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; 
+  justify-items: center;
+}
+@media screen and (max-width: 1100px){
+  .grid--3x2{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 769px){
+  .grid--3x2{
+    grid-template-columns: 1fr;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Inputs */
+
+.input{
+  appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--color-white);
+  background-color: transparent;
+  padding: 0 2rem 0 0;
+  font-size: 2.5rem;
+  width: 20vw;
+}
+.input::placeholder{
+  color: var(--color-white);
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+.input--caps::placeholder{
+  text-transform: capitalize;
+}
+.label{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+/* Buttons  */
+
+.btn--full{
+  background-color: var(--color-yellow);
+  width: 20vw;
+  padding: 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.btn--full:hover{
+ transform: scale(1.03);
+}
+.btn--full-d{
+  color: #101010;
+}
+.btn--full-l{
+  color: var(--color-white);
+}
+
+/* Card */
+
+.card{
+  background-color: rgba(116, 116, 116, 0.5);
+  border: 2px solid var(--color-yellow);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+/* Boxes */
+
+.box--display{
+  color: #101010;
+  border: 1px solid;
+  border: 3px solid var(--color-yellow);
+  background-color: var(--color-white);
+  border-radius: 5px;
+}
+.box--task{
+  aspect-ratio: 1/1;
+  border: 3px solid var(--color-yellow);
+  background-color: var(--color-white);
+  border-radius: 5px;
 }

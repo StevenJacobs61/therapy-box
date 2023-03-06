@@ -1,0 +1,19 @@
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 75vh;
+    padding: 7vh 0 0;
+    overflow-y:auto;
+}
+.gridCard{
+    width: 25rem;
+    height: unset;
+    aspect-ratio: 1.4/1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.img{
+    transform: scale(0.7);
+}

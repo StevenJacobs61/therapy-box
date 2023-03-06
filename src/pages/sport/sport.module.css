@@ -1,0 +1,17 @@
+.input{
+    font-size: 5rem;
+    width: 30vw;
+}
+.input::placeholder{
+    font-size: 5rem;
+    text-align: center;
+}
+.teamNames{
+    width: 80vw;
+    color: var(--color-white);
+    margin: 5rem 0 0;
+}
+.name{
+    font-size: 3rem;
+    font-weight: 400;
+}
